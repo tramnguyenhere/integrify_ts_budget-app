@@ -1,6 +1,6 @@
 import React from 'react'
-import IncomeForm from './IncomeForm'
-import ExpenseForm from './ExpenseForm'
+import IncomeForm from './IncomeForm/IncomeForm'
+import ExpenseForm from './ExpenseForm/ExpenseForm'
 import SavingForm from './SavingForm/SavingForm'
 
 const FormGroupDisplay = () => {
