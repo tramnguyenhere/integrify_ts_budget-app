@@ -38,7 +38,7 @@ const ExpenseInputForm = () => {
         <h2 className='budget-section__heading'>Expense <i className="fa-solid fa-arrow-right-from-bracket"></i></h2>
         <InputItem value={expenseSource} inputName='Expense Source' inputType='text' onChange={setExpenseSource} />
         <InputItem value={amountExpense} inputName='Amount of Expense' inputType='number' onChange={setAmountExpense} />
-        <InputItem value={dateExpense} inputName='Date of Expense' inputType='date' onChange={setDateExpense} />
+        <InputItem inputName='Date of Expense' inputType='date' onChange={setDateExpense} />
         <Button btnName='Add Expense' type='submit'/>
       </form>
       {expenseData.length > 0 &&
