@@ -1,0 +1,27 @@
+@import '../../global.scss';
+
+.btn, .reset-btn {
+    border: 2px solid $color-background-dark;
+    border-radius: 5px;
+    background: $color-blue;
+    color: $color-white;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: $transition-time;
+
+    &:hover {
+        background: $color-dark-blue;
+        cursor: pointer;
+    }
+}
+
+.reset-btn {
+    margin-left: 5px;
+    background: $color-dark-blue;
+    transition: $transition-time;
+
+    &:hover {
+        background: $color-pink;
+        cursor: pointer;
+    }
+}

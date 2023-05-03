@@ -1,0 +1,23 @@
+@import '../../global.scss';
+
+#target-section {
+  background: $color-white;
+  justify-content: space-between;
+
+  #target__details {
+    display: flex;
+    flex-direction: column;
+
+    #target-progress__wrapper {
+      display: flex;
+      align-items: center;
+    }
+    
+    #target__progress {
+      margin-left: 10px;
+      height: 100%;
+      padding: 5px;
+    }
+  }
+}
+

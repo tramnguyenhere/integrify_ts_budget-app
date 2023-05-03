@@ -1,14 +1,19 @@
+@import './global.scss';
+
 .App {
-  margin: 2rem;
-  
-}
-
-.form-group {
-  display: flex;
-  justify-content: space-between;
-}
-
-.input__container, .section__wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5rem;
+  height: 100vh;
+  
+  .app__heading {
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 1rem;
+    color: $color-white;
+  }
 }
+
+

@@ -1,32 +1,108 @@
-# Getting Started with React Components & React Hooks
+# Budget Tracker App
 
-This assignment requires also TypeScript when passing props to React Components
+A simple budget tracker application built with TypeScript and SASS
 
-## Requirements
+## Link to the demo
 
-1. Create a simple one-page application to store incomes and expenses, and set
-saving target.
-2. Account balance can be calculated from incomes, expenses, and saving.
-`incomes - expenses - saving = balance`
-3. Users should be able to add new incomes, expenses, transfer from balance account to saving account, and reset saving target. Balance should never be negative number.
-4. Use React Hooks where applicable. TypeScript must be used at least for the props types.
-5. Style is not the priority in this assignment.
+[https://integrify-budget-app.netlify.app/](https://integrify-budget-app.netlify.app/)
 
-## Bonus point
+## Table of content
 
-1. Add function to transfer money back from saving account to current balance.
-2. Set source of incomes and expenses as the select elements with the categories of your choice.
-3. Add edit/delete button and according functions for incomes and expenses.
-4. Use `d3` package to print out 2 piecharts for incomes and expenses in categories (I only give bonus point when you use `d3`, not the other handier libraries).
+- [Technologies](#technologies)
+- [Project structure](#project-structure)
+- [Getting started](#getting-started)
 
-## References
+<a name="technologies"></a>
 
-Be creative with your style!
+## Technologies
 
-![demo1](demo1.png)
----
+- SASS
+- TypeScript
+- Redux / Redux Toolkit
 
-![demo2](demo2.png)
----
+<a name="project-structure"></a>
 
-![demo3](demo3.png)
+## Project structure
+
+```
+│   .gitignore
+│   package-lock.json
+│   package.json
+│   README.md
+│   tsconfig.json
+│
+├───public
+│       favicon.ico
+│       index.html
+│       logo192.png
+│       logo512.png
+│       manifest.json
+│       robots.txt
+│
+└───src
+    │   App.scss
+    │   App.test.tsx
+    │   App.tsx
+    │   global.scss
+    │   index.css
+    │   index.tsx
+    │
+    ├───components
+    │   │   index.scss
+    │   │   index.ts
+    │   │
+    │   ├───Button
+    │   │       Button.scss
+    │   │       Button.tsx
+    │   │
+    │   ├───ExpenseInputForm
+    │   │       ExpenseInputForm.scss
+    │   │       ExpenseInputForm.tsx
+    │   │
+    │   ├───IncomeInputForm
+    │   │       IncomeInputForm.scss
+    │   │       IncomeInputForm.tsx
+    │   │
+    │   ├───InputItem
+    │   │       InputItem.scss
+    │   │       InputItem.tsx
+    │   │
+    │   └───TargetInputForm
+    │           TargetInputForm.scss
+    │           TargetInputForm.tsx
+    │
+    ├───hooks
+    │       useInput.ts
+    │
+    ├───redux
+    │   │   hooks.ts
+    │   │   store.ts
+    │   │
+    │   └───features
+    │           budgetSlice.ts
+    │
+    ├───types
+    │       type.ts
+    │
+    ├───utils
+    │       utils.ts
+    │
+    └───views
+        ├───BalanceDisplay
+        │       BalanceDisplay.scss
+        │       BalanceDisplay.tsx
+        │
+        └───BudgetPanelUI
+                BudgetPanelUI.scss
+                BudgetPanelUI.tsx
+```
+
+<a name="getting-started"></a>
+
+## Getting started
+
+Clone the repository from github:
+
+```
+git clone https://github.com/tramnguyenhere/integrify_ts_budget-app.git
+```

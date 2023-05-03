@@ -1,0 +1,18 @@
+@import '../../global.scss';
+
+.input-item__wrapper {
+    margin-bottom: 10px;
+    
+    .input__box {
+        width: calc(100% - 10px);
+        border: 2px solid $color-background-dark;
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 18px !important;
+
+        &::placeholder {
+            padding: 10px;
+        }
+    }
+
+}
