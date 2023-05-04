@@ -23,9 +23,7 @@ export const dayOfWeekFormatter = (dayofWeek: number) => {
         case 0: 
             return 'Sun'
         default:
-            console.error('Day of Week format is wrong');
-            console.log(dayofWeek);
-            
+            console.error('Day of Week format is wrong'); 
             break
     }
 }

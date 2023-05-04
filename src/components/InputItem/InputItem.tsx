@@ -1,7 +1,15 @@
 import React from 'react'
 import './InputItem.scss'
 
-const InputItem = ({ inputName, inputType, onChange, value, max }: any) => {
+interface InputItemProps {
+  inputName: string,
+  inputType: string,
+  onChange: any,
+  value?: string | number,
+  max?: number
+}
+
+const InputItem = ({ inputName, inputType, onChange, value, max }: InputItemProps) => {
   return (
     <div className='input-item__wrapper'>
           <h4 className='input__heading'>{ inputName}</h4>      
