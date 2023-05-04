@@ -72,14 +72,7 @@ A simple budget tracker application built with TypeScript and SASS
     │           TargetInputForm.tsx
     │
     ├───hooks
-    │       useInput.ts
-    │
-    ├───redux
-    │   │   hooks.ts
-    │   │   store.ts
-    │   │
-    │   └───features
-    │           budgetSlice.ts
+    │       useSavingTarget.ts
     │
     ├───types
     │       type.ts
@@ -92,9 +85,12 @@ A simple budget tracker application built with TypeScript and SASS
         │       BalanceDisplay.scss
         │       BalanceDisplay.tsx
         │
-        └───BudgetPanelUI
-                BudgetPanelUI.scss
-                BudgetPanelUI.tsx
+        ├───BudgetPanelUI
+        │       BudgetPanelUI.scss
+        │       BudgetPanelUI.tsx
+        │
+        └───PieChart
+                PieChart.tsx
 ```
 
 <a name="getting-started"></a>
