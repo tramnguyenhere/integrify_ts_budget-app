@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import * as d3 from 'd3';
-import { PieChartData, PieChartProps } from '../../types/type';
+
+import { PieChartData, PieChartProps } from '../../types/PieChart';
 
 const PieChart: React.FC<PieChartProps> = ({ data, width, height }) => {
   const ref = useRef<SVGSVGElement>(null);

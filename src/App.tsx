@@ -1,10 +1,13 @@
 import { useEffect, useState } from 'react';
+
 import BudgetPanelUI from './views/BudgetPanelUI/BudgetPanelUI';
-import './App.scss';
 import BalanceDisplay from './views/BalanceDisplay/BalanceDisplay';
-import { IncomeType, ExpenseType, PieChartData } from './types/type';
 import PieChart from './views/PieChart/PieChart';
 import useSavingsTarget from './hooks/useSavingTarget';
+import { IncomeType } from './types/IncomeType';
+import { ExpenseType } from './types/ExpenseType';
+import { PieChartData } from './types/PieChart';
+import './App.scss';
 
 const App = () => {
   const [incomeData, setIncomeData] = useState<IncomeType[]>([]);

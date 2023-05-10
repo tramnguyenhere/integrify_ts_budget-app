@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+
 import InputItem from '../InputItem/InputItem';
 import Button from '../Button/Button';
 import "./TargetInputForm.scss"
-import { TargetInputFormProps } from '../../types/type';
+import { TargetInputFormProps } from '../../types/PropsTypes';
 
 const TargetInputForm = (props: TargetInputFormProps) => {
   const {

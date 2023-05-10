@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
+
 import InputItem from '../InputItem/InputItem';
 import Button from '../Button/Button';
 import './ExpenseInputForm.scss';
-
-import { v4 as uuidv4 } from 'uuid';
-import { ExpenseInputFormProps } from '../../types/type';
 import { dateFormatter } from '../../utils/utils';
+import { ExpenseInputFormProps } from '../../types/PropsTypes';
 
 const ExpenseInputForm = (props: ExpenseInputFormProps) => {
   const { expenseData, setExpenseData, currentBalance } = props;

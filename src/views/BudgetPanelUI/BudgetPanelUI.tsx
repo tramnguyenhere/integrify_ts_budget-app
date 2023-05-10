@@ -1,8 +1,8 @@
 import React from 'react'
 
-import './BudgetPanelUI.scss'
 import { IncomeInputForm, ExpenseInputForm, TargetInputForm } from '../../components'
-import { BudgetPanelUIProps } from '../../types/type'
+import { BudgetPanelUIProps } from '../../types/PropsTypes'
+import './BudgetPanelUI.scss'
 
 const BudgetPanelUI = (props: BudgetPanelUIProps) => {
   const {expenseData, currentBalance, incomeData, setIncomeData, setExpenseData, currentTarget, setCurrentTarget, currentSaving} = props

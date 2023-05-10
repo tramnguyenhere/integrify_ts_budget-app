@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
+
 import InputItem from '../InputItem/InputItem';
 import Button from '../Button/Button';
 import './IncomeInputForm.scss';
-import { v4 as uuidv4 } from 'uuid';
-import { IncomeInputFormProps, IncomeType } from '../../types/type';
 import { dateFormatter } from '../../utils/utils';
+import { IncomeInputFormProps } from '../../types/PropsTypes';
+import { IncomeType } from '../../types/IncomeType';
 
 const IncomeInputForm = (props: IncomeInputFormProps) => {
   const [incomeSource, setIncomeSource] = useState('');

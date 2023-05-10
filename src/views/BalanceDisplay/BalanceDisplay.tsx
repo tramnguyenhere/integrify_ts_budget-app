@@ -1,4 +1,5 @@
-import React, {  useState } from 'react'
+import React, { useState } from 'react'
+
 import Button from '../../components/Button/Button'
 import InputItem from '../../components/InputItem/InputItem'
 import './BalanceDisplay.scss'
